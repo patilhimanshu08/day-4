@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Himanshu Patil - Portfolio, Education, Goals, Achievements" />
+  <meta name="author" content="Karan Patil" />
+  <meta property="og:title" content="Himanshu Patil Portfolio" />
+  <meta property="og:image" content="preview.png" />
+  <meta property="og:description" content="Personal introduction portfolio site." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="favicon.ico" />
+  <title>Himanshu Patil Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-purple-300 via-pink-200 to-yellow-100 text-gray-900 font-sans">
+  <div id="loading" class="fixed top-0 left-0 w-full h-full bg-white z-50 flex items-center justify-center">
+    <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-purple-600"></div>
+  </div>
+
+  <header class="bg-gradient-to-r from-purple-700 to-pink-600 text-white p-4 flex justify-between items-center shadow-xl">
+    <h1 class="text-2xl font-extrabold tracking-wide">Himanshu Patil</h1>
+    <nav class="hidden md:flex space-x-6 text-lg">
+      <a href="#about" class="hover:text-yellow-300 transition duration-300">About</a>
+      <a href="#achievements" class="hover:text-yellow-300 transition duration-300">Achievements</a>
+      <a href="#goals" class="hover:text-yellow-300 transition duration-300">Goals</a>
+      <a href="#personal" class="hover:text-yellow-300 transition duration-300">Personal</a>
+      <a href="#contact" class="hover:text-yellow-300 transition duration-300">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden focus:outline-none">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </header>
+
+  <div id="mobileMenu" class="md:hidden hidden p-4 bg-purple-700 text-white space-y-4 text-center">
+    <a href="#about" class="block">About</a>
+    <a href="#achievements" class="block">Achievements</a>
+    <a href="#goals" class="block">Goals</a>
+    <a href="#personal" class="block">Personal</a>
+    <a href="#contact" class="block">Contact</a>
+  </div>
+
+  <section class="p-8 text-center bg-gradient-to-br from-yellow-200 via-pink-100 to-purple-100 rounded-xl shadow-xl mx-4 mt-6">
+    <h2 class="text-4xl font-extrabold mb-4 text-purple-700">Welcome!</h2>
+    <img src="photo.jpg" alt="Profile Photo" class="w-40 h-40 mx-auto rounded-full border-4 border-pink-300 shadow-md mb-4" />
+    
+    <p class="mb-2 font-semibold text-purple-700 text-lg">Motivational Video</p>
+    <div class="mx-auto rounded-lg shadow-lg max-w-xl aspect-video overflow-hidden">
+      <iframe 
+        src="https://www.youtube.com/embed/ZXsQAXx_ao0" 
+        title="Motivational Video" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen 
+        class="w-full h-full"
+      ></iframe>
+    </div>
+  </section>
+
+  <section id="about" class="p-8 bg-white rounded-lg shadow-xl mx-4 mt-6 border-l-4 border-pink-300">
+    <h2 class="text-3xl font-bold mb-4 text-pink-700">About Me</h2>
+    <ul class="list-disc pl-6">
+      <li>Name: Himanshu Patil</li>
+      <li>Location: Palghar, Maharashtra, India</li>
+      <li>Education: B.Tech in Computer Science</li>
+      <li>Languages: English, Hindi, Marathi</li>
+    </ul>
+  </section>
+
+  <section id="achievements" class="p-8 bg-yellow-50 rounded-lg shadow-xl mx-4 mt-6 border-l-4 border-purple-300">
+    <h2 class="text-3xl font-bold mb-4 text-purple-700">Achievements</h2>
+    <ul id="achievementsList" class="list-disc pl-6">
+      <li>Won State-Level Hackathon 2022</li>
+      <li>Volunteered at ABC NGO, teaching coding 2023</li>
+      <li>Completed Full-Stack Developer Bootcamp 2024</li>
+      <li>Published Open Source Project with 1000+ stars</li>
+    </ul>
+  </section>
+
+  <section id="goals" class="p-8 bg-white rounded-lg shadow-xl mx-4 mt-6 border-l-4 border-pink-300">
+    <h2 class="text-3xl font-bold mb-4 text-pink-700">Future Goals</h2>
+    <p class="text-lg leading-relaxed">I aim to become a full-stack developer and contribute to open-source projects. My goal is to innovate in the tech industry by building tools that improve everyday life and support educational initiatives worldwide.</p>
+  </section>
+
+  <section id="personal" class="p-8 bg-gradient-to-bl from-pink-100 to-purple-100 rounded-lg shadow-xl mx-4 mt-6 border-l-4 border-purple-300">
+    <h2 class="text-3xl font-bold mb-4 text-purple-700">Personal Side</h2>
+    <ul class="list-disc pl-6">
+      <li>Hobbies: Reading, hiking, coding</li>
+      <li>Role Models: Elon Musk - for innovation</li>
+      <li>Favorite Books: "Atomic Habits", "Deep Work"</li>
+      <li>Favorite Startups: Notion, Figma</li>
+      <li>Volunteering: Taught coding in rural schools</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="p-8 bg-white rounded-lg shadow-xl mx-4 mt-6 border-l-4 border-pink-300">
+    <h2 class="text-3xl font-bold mb-4 text-pink-700">Contact Me</h2>
+    <div class="space-y-2">
+      <p>Phone: <a href="tel:+911234567890" class="text-blue-600">+91 1234567890</a></p>
+      <p>WhatsApp: <a href="https://wa.me/911234567890" class="text-green-600" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></p>
+      <p>Email: <a href="mailto:Himanshu@example.com" class="text-red-600">Himanshu@example.com</a></p>
+    </div>
+    <div class="mt-4">
+      <iframe src="https://www.google.com/maps?q=Palghar,+Maharashtra,+India&output=embed" class="w-full h-64 rounded-lg border-4 border-purple-300" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="mt-4">
+      <p class="mb-2">Social Links:</p>
+      <a href="https://github.com/himanshupatil" target="_blank" rel="noopener noreferrer" class="text-gray-800 hover:text-black">GitHub</a> |
+      <a href="https://linkedin.com/in/himanshupatil" target="_blank" rel="noopener noreferrer" class="text-blue-800 hover:text-blue-900">LinkedIn</a> |
+      <a href="https://instagram.com/himanshupatil" target="_blank" rel="noopener noreferrer" class="text-pink-600 hover:text-pink-700">Instagram</a>
+    </div>
+    <form action="#" class="mt-4 space-y-3">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border border-purple-300 rounded focus:ring focus:ring-purple-200" required />
+      <input type="email" placeholder="Your Email" class="w-full p-3 border border-purple-300 rounded focus:ring focus:ring-purple-200" required />
+      <textarea placeholder="Message" class="w-full p-3 border border-purple-300 rounded focus:ring focus:ring-purple-200" required></textarea>
+      <button type="submit" class="bg-purple-700 text-white px-6 py-2 rounded hover:bg-purple-800">Send</button>
+    </form>
+  </section>
+
+  <button id="scrollToTop" class="fixed bottom-4 right-4 bg-purple-600 text-white p-3 rounded-full shadow-xl hover:bg-purple-700 hidden">↑</button>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+    window.addEventListener('load', () => {
+      document.getElementById('loading').style.display = 'none';
+    });
+
+    const scrollBtn = document.getElementById('scrollToTop');
+    window.onscroll = function () {
+      scrollBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+    };
+    scrollBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+
+</html>
